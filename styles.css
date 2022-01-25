@@ -12087,6 +12087,16 @@ p {
   }
 }
 
+.card2 {
+  position: relative;
+  top: 4rem;
+}
+
+.card3 {
+  position: relative;
+  top: 8rem;
+}
+
 @media (max-width: 550px) {
   .image1::after {
     left: 7rem;
