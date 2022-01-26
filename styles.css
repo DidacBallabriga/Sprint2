@@ -12097,6 +12097,31 @@ p {
   top: 8rem;
 }
 
+.section {
+  padding-top: 7rem;
+}
+
+.accordion-item {
+  background-color: #fff;
+  border-left: none;
+  border-right: none;
+}
+
+.accordion-button::after {
+  background-image: url(/uploads/icon-arrow.svg);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #000000;
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/uploads/icon-arrow-seconday.svg);
+}
+
+/*  /uploads/icon-arrow.svg   */
 @media (max-width: 550px) {
   .image1::after {
     left: 7rem;
