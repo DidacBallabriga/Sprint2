@@ -37,9 +37,9 @@
         </div>
       </nav>
 <!––Usar Grid Responsive de Bootstrap, ja que s'ha de veure bé en tauleta i mòbil––>
-      <div class="container-fluid p-5 pt-0">
+      <div class="container-fluid pt-0">
         <div class="row d-flex align-items-center text-center">
-          <div class="col-lg order-1 order-lg-6 mt-5 text-lg-start">
+          <div class="col-lg-4 order-1 order-lg-6 mt-3 text-lg-start mb-5 ps-lg-5">
               <h1>A Simple Bookmark Manager</h1>
               <p>A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
               <button type="button" class="btn btn-primary btn-lg shadow mt-4 me-2 fs-6">Get it on Chrome</button>
@@ -51,8 +51,9 @@
               </div>
           </div>
         </div>
+      </div>
 <!––L'apartat "Features", amb el text descriptiu, ha d'anar dins del Grid de Boostrap––> 
-        <div class="container-fluid col-lg-6 col-12 mt-5 mb-5 text-center">
+        <div class="container-fluid col-lg-5 col-12 mt-5 mb-5 text-center">
           <h2>Features</h2>
           <p>Our aim is to make it quick and easy for you to access your favorite websites, Your bookmarks sync between your devices so you can acces them on de go.</p>
         </div>
@@ -68,13 +69,13 @@
             <button class="nav-link flex-sm-fill text-sm-center" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><span>Easy Sharing</span></button>
           </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content m-3" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <div class="d-flex align-items-center text-center row">
+                  <div class="d-flex align-items-center text-center row pb-5">
                   <div class="image2 col-lg">
-                    <img class="img-fluid rounded float-lg-end" src="/uploads/illustration-features-tab-1.svg" alt="">
+                    <img class="img-fluid rounded float-lg-end" src="./uploads/illustration-features-tab-1.svg" alt="">
                   </div>
-                  <div class="container-fluid col-lg text-lg-start ms-lg-5">
+                  <div class="container-fluid col-lg text-lg-start ms-lg-5 me-lg-5">
                     <h3 class="mt-5">Bookmark in one click</h3>
                     <p>Organize your bookmarks however you like. Our simple drag-drop interface gives you complete control over how you manage your favourite sites.</p>
                     <button class="btn btn-primary btn-lg shadow mt-4 me-2 fs-6 d-none d-lg-block">More info</button>
@@ -84,9 +85,9 @@
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                   <div class="d-flex align-items-center text-center row">
                   <div class="image2 col-lg">
-                  <img class="img-fluid rounded float-lg-end" src="/uploads/illustration-features-tab-2.svg" alt="">
+                  <img class="img-fluid rounded float-lg-end" src="./uploads/illustration-features-tab-2.svg" alt="">
                 </div>
-                <div class="container-fluid col-lg text-lg-start ms-lg-5">
+                <div class="container-fluid col-lg text-lg-start ms-lg-5 me-lg-5">
                   <h3 class="mt-5">Speedy Searchoing</h3>
                   <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of you bookmarks.</p>
                   <button class="btn btn-primary btn-lg shadow mt-4 me-2 fs-6 d-none d-lg-block">More info</button>
@@ -96,9 +97,9 @@
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <div class="d-flex align-items-center text-center row">
                       <div class="image2 col-lg">
-                      <img class="img-fluid rounded float-lg-end" src="/uploads/illustration-features-tab-3.svg" alt="">
+                      <img class="img-fluid rounded float-lg-end" src="./uploads/illustration-features-tab-3.svg" alt="">
                       </div>
-                      <div class="container-fluid col-lg text-lg-start ms-lg-5">
+                      <div class="container-fluid col-lg text-lg-start ms-lg-5 me-lg-5">
                       <h3 class="mt-5">Easy Sharing</h3>
                       <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button</p>
                       <button class="btn btn-primary btn-lg shadow mt-4 me-2 fs-6 d-none d-lg-block">More info</button>
@@ -107,95 +108,120 @@
                 </div>
         </div>
 <!––Construirem la tercera part de la web: l'àrea de descàrregues:––>
-        <div class="container-fluid col-lg-6 col-12 mt-5 mb-5 text-center">
+        <div class="container-fluid col-lg-6 col-12 mt-5 text-center">
           <h3>Download the extension</h3>
-          <p>We've got more browsers in the pipeline. Please do let us know if you've got a fovourite you'd like us to prioritze.</p>
+          <p class="m-2">We've got more browsers in the pipeline. Please do let us know if you've got a fovourite you'd like us to prioritze.</p>
         </div>
-        <div class="row">
-          <div class="card-body col-lg-3 text-center border-top-0 border shadow rounded mb-5 m-lg-5">
-            <img class="mb-4 mt-4" src="/uploads/logo-chrome.svg" alt="">
+        <div class="row ps-5 pe-5">
+          <div class="card-body col-lg-1 text-center border-top-0 border shadow rounded ms-lg-5">
+            <img class="mb-4 mt-4" src="./uploads/logo-chrome.svg" alt="">
             <h5 class="card-title">Add to Chrome</h5>
             <p class="card-text">Minimum version 62</p>
-            <img class="img-fluid mb-3 mt-4" src="/uploads/bg-dots.svg" alt=""><br>
+            <img class="img-fluid mb-3 mt-4" src="./uploads/bg-dots.svg" alt=""><br>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
           </div>
-          <div class="card-body col-lg-3 text-center border-top-0 border shadow rounded mb-5 m-lg-5 card2">
-            <img class="mb-4 mt-4" src="/uploads/logo-firefox.svg" alt="">
+          <div class="card-body col-lg-1 text-center border-top-0 border shadow rounded m-lg-4 card2">
+            <img class="mb-4 mt-4" src="./uploads/logo-firefox.svg" alt="">
             <h5 class="card-title">Add to Firefox</h5>
             <p class="card-text">Minimum version 55</p>
-            <img class="img-fluid mb-3 mt-4" src="/uploads/bg-dots.svg" alt=""><br>
+            <img class="img-fluid mb-3 mt-4" src="./uploads/bg-dots.svg" alt=""><br>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
           </div>
-          <div class="card-body col-lg-3 text-center border-top-0 border shadow rounded mb-5 m-lg-5 card3">
-            <img class="mb-4 mt-4" src="/uploads/logo-opera.svg" alt="">
+          <div class="card-body col-lg-1 text-center border-top-0 border shadow rounded mb-5 me-lg-5 card3">
+            <img class="mb-4 mt-4" src="./uploads/logo-opera.svg" alt="">
             <h5 class="card-title">Add to Opera</h5>
             <p class="card-text">Minimum version 46</p>
-            <img class="img-fluid mb-3 mt-4" src="/uploads/bg-dots.svg" alt=""><br>
+            <img class="img-fluid mb-3 mt-4" src="./uploads/bg-dots.svg" alt=""><br>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
           </div>
+        </div>
 <!––Ara toca desenvolupar l'apartat de FAQS:––>
-          <div class="section">
-          <div class="container-fluid col-lg-6 col-12 mt-5 mb-5">
-            <h3>Frequently Asked Questions</h3>
-            <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
-        <div class="accordion mt-5 text-center" id="accordionExample">
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                What is Bookmark?
-              </button>
-            </h4>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
+        <div class="section m-2 text-center">
+              <div class="container-fluid col-lg-5 col-12 mt-5 mb-5">
+                <h3>Frequently Asked Questions</h3>
+                <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+            <div class="accordion mt-5 text-center" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What is Bookmark?
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How can I request a new browser?
+                  </button>
+                </h4>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
+                  </div>
+                </div>
+              </div> 
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Is there a mobile app?
+                  </button>
+                </h4>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  What about other Chromium browsers?
+                  </button>
+                </h4>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="container-fluid d-flex justify-content-center">
+                <button class="btn btn-primary btn-lg shadow mt-4 fs-6">More info</button>
+                </div>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                How can I request a new browser?
-              </button>
-            </h4>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
-              </div>
-            </div>
-          </div> 
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Is there a mobile app?
-              </button>
-            </h4>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
-              </div>
-            </div>
+        </div>
+<!––Només falta un bloc per a temrinar la web: el footer.––>
+      <div class="footer bg-primary p-3">
+        <div class="container-fluid col-lg-6 col-10 mt-5 mb-5 text-center">
+          <p class="text-light fs-6">35.000 + ALREADY JOINED</p>
+          <p class="text-light fs-1">Stay up-to-date with <br> we're doing</p>
+        <form class="was-validated">
+          <div class="mb-3 row">
+            <input placeholder="Enter your email adress" type="email" class="form-control me-lg-3 col mt-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <button type="submit" class="btn btn-secondary text-light col-lg-4 mt-3 fs-6">Contact us</button>
           </div>
-          <div class="accordion-item">
-            <h4 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-               What about other Chromium browsers?
-              </button>
-            </h4>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
-              </div>
-            </div>
-          </div>
-        </div> 
-        <div class="container-fluid d-flex justify-content-center">
-             <button class="btn btn-primary btn-lg shadow mt-4 fs-6">More info</button>
-            </div>
+        </form>
       </div>
     </div>
-
-
-     
+      <footer class="container-fluid footer2 p-4">
+          <div class="row text-center">
+            <a class="col-12 col-lg-3 text-light mt-3 mb-4" href="#">
+              <img src="./uploads/logo-bookmark-white.svg" alt="">
+            </a>
+              <p class="text-light col-12 col-lg-1 mt-3">FEATURES</p>
+              <p class="text-light col-12 col-lg-1 mt-3">PRICING</p>
+              <p class="text-light col-12 col-lg-1 mt-3">CONTACT</p>
+                <div class="d-flex justify-content-lg-end justify-content-center col-lg col-12 mb-lg-0 mb-5 mt-lg-0 mt-3">
+                <img class="text-light me-5 rrss" src="./uploads/icon-facebook.svg" alt="">
+                <img class="text-light rrss" src="./uploads/icon-twitter.svg" alt="">
+                </div>
+            </div>
+       </footer>
 
         <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
