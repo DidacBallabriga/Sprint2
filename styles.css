@@ -12125,12 +12125,6 @@ p {
   background-color: #242946;
 }
 
-.rrss {
-  width: 30px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 @media (max-width: 550px) {
   .image1::after {
     left: 7rem;
@@ -12149,5 +12143,74 @@ p {
     left: -6rem;
     height: 55%;
   }
+}
+
+.btn-secondary {
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #FA5959 !important;
+  border: 1px solid #FA5959;
+}
+
+.nav-link:hover {
+  color: #FA5959 !important;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #5265E1 !important;
+  border: 1px solid #5265E1;
+}
+
+.getfirefox:hover {
+  background-color: #fff;
+  color: black !important;
+  border: 1px solid black;
+}
+
+.accordion-button:hover {
+  color: #FA5959 !important;
+}
+
+.footerlink {
+  text-decoration: none;
+}
+
+.footerlink:hover {
+  color: #FA5959 !important;
+}
+
+.footerlinkfc {
+  background-image: url(./uploads/icon-facebook.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+.footerlinktw {
+  background-image: url(./uploads/icon-twitter.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.footerlinkfc:hover {
+  background-image: url(./uploads/icon-facebook-red.svg);
+  background-repeat: no-repeat;
+}
+
+.footerlinktw:hover {
+  background-image: url(./uploads/icon-twitter-red.svg);
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=styles.css.map */
