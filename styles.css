@@ -12087,16 +12087,6 @@ p {
   }
 }
 
-.card2 {
-  position: relative;
-  top: 4rem;
-}
-
-.card3 {
-  position: relative;
-  top: 8rem;
-}
-
 .section {
   padding-top: 7rem;
 }
@@ -12212,5 +12202,46 @@ p {
 .footerlinktw:hover {
   background-image: url(./uploads/icon-twitter-red.svg);
   background-repeat: no-repeat;
+}
+
+.card-body:nth-child(1) {
+  height: 350px;
+  position: relative;
+  top: 2rem;
+  list-style-type: none;
+}
+
+.card-body:nth-child(2) {
+  height: 350px;
+  position: relative;
+  top: 4rem;
+  list-style-type: none;
+}
+
+.card-body:nth-child(3) {
+  height: 350px;
+  position: relative;
+  top: 6rem;
+  list-style-type: none;
+}
+
+.invalid-feedback {
+  border-color: #FA5959 !important;
+  border-bottom: 0rem solid #FA5959 !important;
+  background-color: #FA5959 !important;
+  color: #fff !important;
+  border-radius: 0rem 0rem 0.25rem 0.25rem !important;
+  margin-top: 0rem !important;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  font-size: 0.75rem;
+}
+
+.was-validated .form-control:invalid {
+  background-image: url(./uploads/icon-error.svg) !important;
+}
+
+.form-control {
+  border-radius: 0.25rem 0.25rem 0rem 0rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -112,29 +112,33 @@
           <h3>Download the extension</h3>
           <p class="m-2">We've got more browsers in the pipeline. Please do let us know if you've got a fovourite you'd like us to prioritze.</p>
         </div>
-        <div class="row ps-5 pe-5">
-          <div class="card-body col-lg-1 text-center border-top-0 border shadow rounded ms-lg-5">
+        <ul class="row ps-5 pe-5">
+ 
+          <li class="card-body col-lg-1 text-center border-top-0 border shadow rounded ms-lg-5">
             <img class="mb-4 mt-4" src="./uploads/logo-chrome.svg" alt="">
             <h5 class="card-title">Add to Chrome</h5>
             <p class="card-text">Minimum version 62</p>
             <img class="img-fluid mb-3 mt-4" src="./uploads/bg-dots.svg" alt=""><br>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
-          </div>
-          <div class="card-body col-lg-1 text-center border-top-0 border shadow rounded m-lg-4 card2">
+        
+        </li>
+        <li class="card-body col-lg-1 text-center border-top-0 border shadow rounded ms-lg-3 me-lg-3 card2">
             <img class="mb-4 mt-4" src="./uploads/logo-firefox.svg" alt="">
             <h5 class="card-title">Add to Firefox</h5>
             <p class="card-text">Minimum version 55</p>
             <img class="img-fluid mb-3 mt-4" src="./uploads/bg-dots.svg" alt=""><br>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
-          </div>
-          <div class="card-body col-lg-1 text-center border-top-0 border shadow rounded mb-5 me-lg-5 card3">
+      
+        </li>
+        <li class="card-body col-lg-1 text-center border-top-0 border shadow rounded mb-5 me-lg-5 card3">
             <img class="mb-4 mt-4" src="./uploads/logo-opera.svg" alt="">
             <h5 class="card-title">Add to Opera</h5>
             <p class="card-text">Minimum version 46</p>
             <img class="img-fluid mb-3 mt-4" src="./uploads/bg-dots.svg" alt=""><br>
             <a href="#" class="btn btn-primary">Add & Install Extension</a>
-          </div>
-        </div>
+      
+        </li>
+      </ul>
 <!––Ara toca desenvolupar l'apartat de FAQS:––>
         <div class="section m-2 text-center">
               <div class="container-fluid col-lg-5 col-12 mt-5 mb-5">
@@ -143,11 +147,11 @@
             <div class="accordion mt-5 text-center" id="accordionExample">
               <div class="accordion-item">
                 <h4 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     What is Bookmark?
                   </button>
                 </h4>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <strong>Lorem, ipsum dolor sit amet consectetur adipisicing.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eaque! Ad recusandae quidem voluptatem non aut reiciendis nemo, totam blanditiis est rerum vitae, itaque perferendis et amet rem! Beatae, corporis.
                   </div>
@@ -200,12 +204,22 @@
         <div class="container-fluid col-lg-6 col-10 mt-5 mb-5 text-center">
           <p class="text-light fs-6">35.000 + ALREADY JOINED</p>
           <p class="text-light fs-1">Stay up-to-date with <br> we're doing</p>
+
+
+
         <form class="was-validated">
           <div class="mb-3 row">
-            <input placeholder="Enter your email adress" type="email" class="form-control me-lg-3 col mt-3" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <button type="submit" class="btn btn-secondary text-light col-lg-4 mt-3 fs-6">Contact us</button>
+            <div class="me-lg-3 col mt-3" >
+              <input placeholder="Enter your email adress" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div class="invalid-feedback text-start">Whoops, make sure it's an email</div>
+            </div>
+            <button type="submit" class="btn btn-secondary text-light col-lg-4 mt-3 fs-6 h-25">Contact us</button>
           </div>
         </form>
+
+
+
+
       </div>
     </div>
       <footer class="container-fluid footer2 p-4">
@@ -221,9 +235,7 @@
                   <div class="me-lg-5 mt-lg-3 ms-3 mt-3 footerlinktw">&nbsp;</div>
                 </div>
             </div>
-           
        </footer>
-
-        <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

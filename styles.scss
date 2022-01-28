@@ -1,0 +1,269 @@
+///Modificar amb SASS, mitjançant l'arxiu creat per tu "main.scss",
+///el color principal i secundari de Boostrap.
+///Usa aquestes variables per al color dels botons
+$primary: #5265E1;
+$secondary: #FA5959;
+$nav-link-padding-x: 3rem;
+
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap');
+body {
+  font-family: 'Rubik', sans-serif;
+}
+p{
+    color: #9194a1;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.7);
+}
+.image1 {
+    position: relative;
+    overflow: hidden;
+    right: 0;
+    width: 100%;
+    &::after {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 16rem;
+        content: "";
+        width: 100%;
+        height: 63%;
+        border-radius: 0 0 0 10rem;
+        background-color: #5368df;
+        z-index: -1;
+    } 
+    img { 
+        padding: 2rem 1rem;
+    }
+}
+.image2 {
+    position: relative;
+    overflow: hidden;
+    right: 0;
+    width: 100%;
+    &::after {
+        position: absolute;
+        bottom: 0.5rem;
+        left: -5rem;
+        content: "";
+        width: 100%;
+        height: 70%;
+        border-radius: 0 20rem 10rem 0;
+        background-color: #5368df;
+        z-index: -1;
+    } 
+    img { 
+        padding: 4rem 1rem;
+    }
+}
+
+.nav-tabs {
+    border-bottom: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    .nav-link.active span {
+        border-bottom: 4px solid #FA5959;
+        padding-bottom: 1.5rem;
+        font-weight: 500;
+        color: #495057;
+    }
+    #home-tab {
+        white-space: pre;
+        color: #9194a1;
+        background-color: #fff;
+        padding-bottom: 21px;
+        border-left: none;
+        border-right: none;
+        border-top: transparent;
+    }
+    
+    #profile-tab {
+        white-space: pre;
+        color: #9194a1;
+        padding-bottom: 1.5rem;
+        border-left: none;
+        border-right: none;
+        border-top: transparent;
+        border-bottom: 1px solid #dee2e6;
+
+    }
+
+    #contact-tab {
+        white-space: pre;
+        color: #9194a1;
+        padding-bottom: 1.5rem;
+        border-left: none;
+        border-right: none;
+        border-top: transparent;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+}
+
+
+@media (max-width: 992px){
+    .image2{
+        &::after {
+            left: -22rem;
+        }
+    }
+    .nav-tabs {
+        li{
+            width: 100%;
+        }
+        .nav-link.active span {
+            padding-bottom: 1rem;
+    }
+        #home-tab {
+            width: 100%;
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 1rem;
+        }
+        #profile-tab {
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            width: 100%;
+        }
+        #contact-tab {
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            width: 100%;
+        }
+}
+}
+
+.section{
+    padding-top: 7rem;
+}
+.accordion-item {
+    background-color: #fff;
+    border-left: none;
+    border-right: none;
+}
+.accordion-button::after {
+    background-image: url(./uploads/icon-arrow.svg);
+}
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    color: 	#000000;
+    font-weight: 500;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url(./uploads/icon-arrow-seconday.svg);
+}
+.footer2{
+    background-color: #242946;
+}
+
+@media (max-width: 550px){
+    .image1{
+        &::after {
+            left: 7rem;
+        }   
+    }
+    .image2{
+        &::after {
+            left: -4rem;
+        }
+    }
+}
+@media (max-width: 375px){
+    .image1{
+        &::after {
+            left: 2rem;
+        }
+}
+.image2{
+    &::after {
+        bottom: 2rem;
+        left: -6rem;
+        height: 55%;
+    }
+}
+}
+.btn-secondary {
+    border-radius: 5px; 
+    color: #fff
+}
+
+.btn-secondary:hover {
+    background-color: #fff;
+    color: #FA5959 !important;
+    border: 1px solid #FA5959;
+}
+.nav-link:hover {
+    color: #FA5959 !important;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #5265E1 !important;
+    border: 1px solid #5265E1;
+}
+.getfirefox:hover {
+    background-color: #fff;
+    color: black !important;
+    border: 1px solid black;
+}
+.accordion-button:hover {
+    color: #FA5959 !important;
+}
+.footerlink{
+    text-decoration: none;
+}
+.footerlink:hover {
+    color: #FA5959 !important;
+}
+.footerlinkfc {
+    background-image: url(./uploads/icon-facebook.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.footerlinktw {
+    background-image: url(./uploads/icon-twitter.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.footerlinkfc:hover {
+    background-image: url(./uploads/icon-facebook-red.svg);
+    background-repeat: no-repeat;
+}
+.footerlinktw:hover {
+    background-image: url(./uploads/icon-twitter-red.svg);
+    background-repeat: no-repeat;
+}
+
+@for $n from 1 through 3 {
+    .card-body:nth-child(#{$n}){
+        height: 350px;
+        position: relative;
+        top: ($n*2rem);
+        list-style-type: none;
+    }
+}
+.invalid-feedback {
+    border-color: $secondary !important;
+    border-bottom: 0rem solid $secondary !important;
+    background-color: $secondary !important;
+    color: #fff !important;
+    border-radius: 0rem 0rem 0.25rem 0.25rem !important;
+    margin-top: 0rem !important;
+    padding: 0.25rem;
+    padding-left: 1rem;
+    font-size: 0.75rem;
+}
+.was-validated .form-control:invalid {
+    background-image: url(./uploads/icon-error.svg) !important;
+}
+.form-control {
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
